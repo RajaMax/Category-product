@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
-
+import {
+  ToastyService,
+  ToastyConfig,
+  ToastOptions,
+  ToastData
+} from "ng2-toasty";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,5 +12,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  constructor(
+    private toastyService:ToastyService,
+    private toastyConfig: ToastyConfig
+  ) {
+    this.toastyConfig.theme = 'default';
+  }
 
 }

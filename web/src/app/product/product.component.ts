@@ -1,7 +1,6 @@
 import { Component, OnInit, TemplateRef, ViewChild, Input, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { DataService } from '../service/data.service';
-
 @Component({
   selector: 'app-product',
   templateUrl: './product.component.html',

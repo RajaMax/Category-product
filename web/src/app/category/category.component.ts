@@ -2,7 +2,6 @@ import { Component, OnInit, TemplateRef, ViewChild, Input, Output, EventEmitter 
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { DataService } from '../service/data.service';
 
-
 @Component({
   selector: 'app-category',
   templateUrl: './category.component.html',
@@ -12,7 +11,7 @@ export class CategoryComponent implements OnInit {
 
   constructor(
     private ds: DataService,
-    public formBuilder: FormBuilder,
+    public formBuilder: FormBuilder
   ) { }
   records: any = [];
   count: any = 0;

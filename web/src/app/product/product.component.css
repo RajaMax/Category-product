@@ -8,3 +8,19 @@
     background-color: #8c8c8c;
     color: white;
 }
+.edit{
+    font-size: 12px;
+    background-color: white;
+    color: #518e51;
+    font-weight: bold;
+    border-color: #00ec00;
+    border-radius: 7px;
+}
+.delete{
+    font-size: 12px;
+    background-color: white;
+    color: #ee0000;
+    font-weight: bold;
+    border-color: #ec0000;
+    border-radius: 7px;
+}

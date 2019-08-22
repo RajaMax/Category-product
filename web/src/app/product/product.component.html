@@ -1,3 +1,4 @@
+<!-- <ng2-toasty [position]="'top-right'"></ng2-toasty> -->
 <div class="container">
   <h2>Product</h2>
   <form [formGroup]="myform">
@@ -52,10 +53,10 @@
           <td>{{record.name}}</td>
 
           <td class='center' style='width: 150px !important;'>
-            <button (click)="editRecord(record)">
+            <button class='edit' (click)="editRecord(record)">
               Edit
             </button>
-            <button (click)="DeleteRecord(record._id)">
+            <button class='delete' (click)="DeleteRecord(record._id)">
               Delete
             </button>
           </td>
@@ -64,7 +65,7 @@
       <tr *ngIf="!records?.length">
         <td colspan="12" class="text-center">
           <a class="text-primary">
-            <strong>NO Product</strong>
+            <strong>No Product</strong>
           </a>
         </td>
       </tr>
