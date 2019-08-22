@@ -1,0 +1,10 @@
+.submit{
+    margin-top: 31px;
+}
+.required{
+    color: red
+}
+.cancel{
+    background-color: #8c8c8c;
+    color: white;
+}
